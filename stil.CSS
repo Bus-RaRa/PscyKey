@@ -1,0 +1,238 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body 
+{
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1b1b2f 0, #050509 50%, #000000 100%);
+  color: #f5f5ff;
+  min-height: 100vh;
+}
+
+header 
+{
+  padding: 1rem 5rem 0.5rem;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+
+.top-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+
+.brand 
+{
+  display: flex;
+  align-items: center;
+}
+
+.arr-down
+{
+    cursor: pointer;
+}
+
+.logo 
+{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.site-title 
+{
+  font-size: 1.5rem;
+}
+
+
+.menu-icon 
+{
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  margin-left:auto;
+}
+
+.main-nav 
+{
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+
+
+.main-nav a 
+{
+  color: #d8d8ff;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+
+.main-nav a::after 
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #7f5af0, #2cb67d);
+  transition: width 0.25s;
+}
+
+
+.main-nav a:hover::after 
+{
+  width: 100%;
+}
+
+
+main 
+{
+  padding: 0 1.5rem;
+  margin: 2.5rem auto 3rem;
+  max-width: 1000px;
+}
+
+blockquote 
+{
+    margin:0;
+}
+.pquote 
+{
+    float: center;
+    width: 1000px;
+    color: #c7c7e6;
+    font-size: 30px;
+    line-height: 0.9;
+    font-style: italic;
+    padding: 5rem 10rem 5rem;
+
+}
+
+.pquote p::first-letter
+{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.ana 
+{
+  background: #0a0a14e6;
+  padding: 2rem 1.75rem 2.25rem;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px #000000a6;
+  border: 1px solid #ffffff0f;
+}
+
+
+.ana h1 
+{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.ana p 
+{
+  color: #c7c7e6;
+  max-width: 36rem;
+}
+
+
+.enneagram-grid 
+{
+  margin-top: 1.75rem;
+  display: grid;
+  gap: 1.25rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+
+.type-card 
+{
+  background: linear-gradient(135deg, #1e1e32f2, #0f0f1ef2);
+  padding: 1.25rem 1.1rem 1.3rem;
+  border-radius: 16px;
+  border: 1px solid #ffffff14;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s ease,box-shadow 0.18s ease,border-color 0.18s ease;
+}
+
+
+.type-card::before 
+{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #c8c8ff59;
+}
+
+
+.type-card:hover 
+{
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px #000000bf;
+  border-color: #7f5af0e6;
+}
+
+
+.type-card h2 
+{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.type-card .badge 
+{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+  box-shadow: 0 0 20px #ff7b7b59;
+  border-radius: 1000px;
+}
+
+
+.type-card p 
+{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #d4d4f5;
+}
+
+
+footer 
+{
+  border-top: 1px solid #ffffff0f;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #9a9ab8;
+}
